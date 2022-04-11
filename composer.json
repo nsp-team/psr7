@@ -1,0 +1,42 @@
+{
+    "name": "nsp-team/psr7",
+    "type": "library",
+    "keywords": [
+        "php",
+        "http",
+        "psr7"
+    ],
+    "description": "PSR implementation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maoxp",
+            "email": "maoxingpei8686@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "NspTeam\\Psr7\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NspTeamTest\\Psr7\\Unit\\": "test/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit -c phpunit.xml"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
